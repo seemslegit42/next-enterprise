@@ -1,6 +1,10 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
+// =========================================================
+// CONFIGURATION
+// =========================================================
+
 generator client {
   provider = "prisma-client-js"
   output   = "../generated/prisma"
@@ -10,3 +14,6 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+// This is a reference to the main schema.prisma file in the project root.
+// The complete schema is defined in /prisma/schema.prisma
